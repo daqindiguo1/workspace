@@ -1,0 +1,18 @@
+3.建立本地到上游（远端）仓的链接 --这样代码才能提交上去
+
+git branch --set-upstream-to=origin/dev 
+
+取消对master的跟踪
+
+git branch --unset-upstream master
+
+git 创建分支提交远程分支 - oppotvr
+
+以下两个应该是同一个意思，=upstream : 上游码流的意思
+git branch --set-upstream-to=master
+git branch --set-upstream-to=original/master
+
+git help branch
+git branch [--set-upstream | --track | --no-track] [-l] [-f] <branchname> [<start-point>]
+git branch (--set-upstream-to=<upstream> | -u <upstream>) [<branchname>]
+git branch --unset-upstream [<branchname>]
